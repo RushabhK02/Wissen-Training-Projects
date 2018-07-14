@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;DBConnectionFactory.java&apos; to &apos;PMv1.0/src/com.shop.db&apos;&#x0D;&#x0A;- Original project: &apos;Java_Jdbc&apos;&#x0D;&#x0A;- Destination element: &apos;PMv1.0/src/com.shop.db&apos;&#x0D;&#x0A;- Original element: &apos;com.app.db.DBConnectionFactory.java&apos;" description="Copy compilation unit" destination="=PMv1.0/src&lt;com.shop.db" element1="/src&lt;com.app.db{DBConnectionFactory.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1529915274375" units="1" version="1.0"/>
+</session>

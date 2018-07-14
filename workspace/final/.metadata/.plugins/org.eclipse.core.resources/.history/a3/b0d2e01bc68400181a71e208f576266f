@@ -1,0 +1,5 @@
+package com.shopping.product.repository;
+
+public interface ProductRepository {
+
+}

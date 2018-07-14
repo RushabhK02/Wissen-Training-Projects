@@ -1,0 +1,16 @@
+<div class="container">
+    <nav class="navbar navbar-light bg-primary">
+        <a class="navbar-brand" [routerLink]="['']">{{title}}</a>
+    </nav>
+    <hr/>
+   	<app-cart-badge></app-cart-badge>
+    |
+    <a [routerLink]="['products']">View products</a>
+    |
+    <a [routerLink]="['cart']">View cart</a>
+    <hr/>
+    <hr/>
+    
+    <router-outlet></router-outlet>
+   
+</div>

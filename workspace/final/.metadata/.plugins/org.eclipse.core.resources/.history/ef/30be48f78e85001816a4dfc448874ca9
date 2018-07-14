@@ -1,0 +1,9 @@
+package com.shopping.txns.service;
+
+import com.shopping.txns.repository.AccountRepository;
+import com.shopping.txns.repository.TxnRepository;
+
+public interface TxrService {
+
+	void txr(double amount, String fromAccNum, String toAccNum);
+}

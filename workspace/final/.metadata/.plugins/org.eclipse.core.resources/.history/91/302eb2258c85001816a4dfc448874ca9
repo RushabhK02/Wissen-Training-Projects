@@ -1,0 +1,26 @@
+package com.bank.mts.repository;
+
+import java.util.List;
+
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
+
+import com.bank.mts.model.Txn;
+
+public class TxnRepositoryImpl implements TxnRepopository {
+
+	@PersistenceContext
+	private EntityManager entityManager;
+
+	@Override
+	public void save(Txn txn) {
+		entityManager.persist(txn);
+	}
+
+	@SuppressWarnings("unchecked")
+	@Override
+	public List<Txn> findAll() {
+		return entityManager.createQuery("from Txn").getResultList();
+	}
+
+}

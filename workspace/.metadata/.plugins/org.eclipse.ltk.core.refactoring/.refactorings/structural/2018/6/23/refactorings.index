@@ -1,0 +1,18 @@
+1528363521668	Delete element
+1528363542045	Rename package 'structural'
+1528436532160	Rename compilation unit 'AtmSystem.java'
+1528438759494	Rename type 'App'
+1528439428610	Rename type 'LowerCurrencyFirstAtmSystem'
+1528439438946	Rename type 'StandardAtmSystem'
+1528439452586	Rename type 'AtmSystem'
+1528439555285	Rename type 'AtmChain'
+1528439616186	Rename type 'LowerCurrencyFirstAtmChain'
+1528439626633	Rename type 'StandardAtmChain'
+1528441222599	Move package
+1528443328314	Rename compilation unit 'LuxuryCar.java'
+1528443573386	Rename compilation unit 'Decorator.java'
+1528448669115	Rename compilation unit 'Decorator.java'
+1528451383001	Delete element
+1528451885227	Rename compilation unit 'Manager.java'
+1528452491882	Rename compilation unit 'Employee.java'
+1528455568613	Rename type 'LeagacyBMI'

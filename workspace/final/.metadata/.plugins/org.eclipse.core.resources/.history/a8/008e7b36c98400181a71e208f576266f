@@ -1,0 +1,37 @@
+package com.shopping.product.repository;
+
+import java.util.List;
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
+import javax.persistence.Query;
+
+import org.springframework.stereotype.Repository;
+import com.shopping.product.model.Product;
+
+@Repository(value="productRepository")
+public class ProductRepositoryImpl implements ProductRepository {
+
+	@PersistenceContext
+	private EntityManager em;
+
+	@Override
+	public List<Product> findAll() {
+		return em.createQuery("from Product").getResultList();
+	}
+	
+	@Override
+	public <T> Product findByProperty(T propValue) {
+		Query query;
+		if (propValue instanceof String){
+			query = em.createQuery("from Product p where p.name=:pName");
+			query.setParameter("pName", propValue);
+	    }
+		if (propValue instanceof Integer){
+			query = em.createQuery("from Product p where p.id=:pId");
+			query.setParameter("pId",((Integer) propValue).intValue());
+	    }
+		
+		return query.getResultList().get(0);
+	}
+
+}

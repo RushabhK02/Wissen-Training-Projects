@@ -1,0 +1,6 @@
+package com.bank.mts.repository;
+
+public interface AccountRepository {
+	public Account load(num);
+	
+}

@@ -1,0 +1,5 @@
+package com.shopping.product.model;
+
+public class ReviewForm {
+
+}

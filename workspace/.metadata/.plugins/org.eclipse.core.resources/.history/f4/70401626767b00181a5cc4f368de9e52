@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Bank-mts Service</title>
+<link href="css/bootstrap.css" rel="stylesheet">
+</head>
+<body class="container">
+<div class="navbar navbar-light bg-primary">
+<a class="navbar-brand" href="#">my_bank</a>
+</div>
+<hr />
+<div class="col-sm-6 col-md-6">
+		<div class="card">
+			<div class="card-header">Txr Form</div>
+			<div class="card-body">
+				<form action="txr" method="post">
+					<div class="form-group">
+						<label>From Account</label> <input name="fromAccNum"
+							class="form-control" />
+					</div>
+					<div class="form-group">
+						<label>To Account</label> <input name="toAccNum"
+							class="form-control" />
+					</div>
+					<div class="form-group">
+						<label>Amount</label> <input name="amount" class="form-control" />
+					</div>
+					<button class="btn btn-primary">Txr</button>
+				</form>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>

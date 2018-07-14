@@ -1,0 +1,10 @@
+
+Product-Catalog Service
+-------------------------
+
+	Protocol:
+		GET
+		
+	URIs:
+	GET:	api/product-catalog
+	GET: 	api/product-catalog/{id}

@@ -1,0 +1,12 @@
+package com.shopping.product.model;
+
+public class Product {
+	int id;
+	String name;
+	double price;
+	String makeDate;
+	String image;
+	String description;
+	
+	
+}

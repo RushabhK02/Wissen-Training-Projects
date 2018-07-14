@@ -1,0 +1,7 @@
+create table PRODUCTS( 
+id number primary key, 
+name varchar(50),
+price number,
+makeDate date,
+description varchar(100)
+image varchar(255) )

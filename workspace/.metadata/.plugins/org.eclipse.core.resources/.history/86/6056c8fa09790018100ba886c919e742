@@ -1,0 +1,11 @@
+package com.app.calc;
+
+public class CalculatorTest {
+
+	Calculator calculator;
+
+	public void setUp() {
+		calculator = new Calculator();
+	}
+
+}

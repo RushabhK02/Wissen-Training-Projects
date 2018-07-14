@@ -1,0 +1,9 @@
+insert into PRODUCTS(name,price,makeDate,description) values
+('Laptop', 230000, '2017-12-23','Great Laptop, Must buy!');
+
+insert into PRODUCTS(name,price,makeDate,description) values
+('Mobile', 23000, '2017-12-27','Great phone, Must buy!');
+
+insert into PRODUCTS(name,price,makeDate,description) values
+('Kindle', 12999, '2018-04-23','Good Product');
+

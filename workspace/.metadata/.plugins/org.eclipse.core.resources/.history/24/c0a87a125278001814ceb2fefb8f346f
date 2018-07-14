@@ -1,0 +1,27 @@
+package com.shop.repository;
+
+import java.util.List;
+
+import com.shop.model.Product;
+
+public class JdbcRepository implements ProductRepository {
+
+	@Override
+	public void save(Product product) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public Product find(int id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Product> findAll() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

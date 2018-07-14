@@ -1,0 +1,34 @@
+package com.shopping.txns.web;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.ApplicationContext;
+import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.context.support.WebApplicationContextUtils;
+
+import com.shopping.txns.service.TxrService;
+
+@CrossOrigin(origins="*")
+@RestController
+@RequestMapping(value = "/api/product-txn")
+public class TxrController {
+
+	@Autowired
+	private TxrService txrService;
+
+	@PostMapping(produces = "application/json")
+	protected void doPost(@RequestBody TxnDetails txnDetails){
+		// input
+		String fromAccNum = txnDetails.getFromAccNum();
+		String toAccNum = txnDetails.getToAccNum();
+		String amount =  txnDetails.getAmount();
+		// process input
+		txrService.txr(Double.parseDouble(amount), fromAccNum, toAccNum);
+		// output
+		//resp.sendRedirect("txr-status.jsp");
+	}
+
+}

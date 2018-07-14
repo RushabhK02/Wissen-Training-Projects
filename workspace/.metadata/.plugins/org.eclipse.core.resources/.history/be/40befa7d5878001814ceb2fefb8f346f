@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>PM</title>
+<link href="css/bootstrap.css" rel="stylesheet" />
+</head>
+<body class="container">
+	<hr />
+	<h1>PM</h1>
+	<hr />
+
+	<div class="col-sm-8 col-md-8">
+		<div class="card">
+			<div class="card-header">Product Form</div>
+			<div class="card-body">
+				<form>
+					<div class="row">
+						<div class="col">
+							<input type="text" class="form-control" placeholder="Name" />
+						</div>
+						<div class="col">
+							<input type="number" class="form-control" placeholder="Price" />
+						</div>
+						<div class="col">
+							<input type="text" class="form-control" placeholder="make-Date" />
+						</div>
+					</div>
+					<hr />
+					<div class="row">
+						<div class="col">
+							<textarea rows="" cols="" class="form-control"
+								placeholder="Description">
+							</textarea>
+						</div>
+					</div>
+					<hr />
+					<div class="row">
+						<center>
+							<button class="btn btn-primary">Save</button>
+						</center>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,26 @@
+package com.shopping.product.repository;
+
+import java.util.List;
+
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
+
+import com.shopping.product.model.Review;
+
+public class ReviewRepositoryImpl implements ReviewRepository {
+
+	@PersistenceContext
+	EntityManager em;
+	
+	@Override
+	public List<Review> loadReviews(int productId) {
+		return em.createQuery("from Review where ").getResultList();
+
+	}
+
+	@Override
+	public Review addReview(Review review) {
+		return em.merge(review);
+	}
+
+}

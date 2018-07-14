@@ -1,0 +1,5 @@
+package com.bank.mts.repository;
+
+public class JdbcAccountRepository implements AccountRepository {
+	
+}

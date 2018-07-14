@@ -1,0 +1,5 @@
+package com.shopping.txns.web;
+
+public class TxnResponse {
+	String status;
+}

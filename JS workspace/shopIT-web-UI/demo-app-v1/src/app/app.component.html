@@ -1,0 +1,18 @@
+<div class="container">
+  <nav class="navbar navbar-light bg-primary">
+      <a class="navbar-brand" href="#">{{title}}</a>
+  </nav>
+  <hr/>
+  <i class="fa fa-shopping-cart"></i> -
+  <span class="badge badge-dark">{{itemsCount}}</span> item(s) in cart
+  <a class="pull-right" href="#" (click)="toggleCart()">{{isCartOpen?'View-products':'View-cart'}}</a>
+  <hr/>
+  <app-view-cart *ngIf="isCartOpen" [cart]="cart"></app-view-cart>
+  <hr/>
+  <div class="list-group" *ngIf="!isCartOpen">
+      <div *ngFor="let product of products | slice:0:15;let idx=index" class="list-group-item">
+          <app-product [idx]="idx" [product]="product" (buy)="addToCart($event)">
+          </app-product>
+      </div>
+  </div>
+</div>

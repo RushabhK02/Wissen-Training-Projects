@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Bank-mts Service</title>
+<link href="css/bootstrap.css" rel="stylesheet">
+</head>
+<body class="container">
+<div class="navbar navbar-light bg-primary">
+<a class="navbar-brand" href="#">my_bank</a>
+</div>
+<hr />
+<hr />
+<a href="txr.html" class="btn btn-alert">Txr</a>
+
+</body>
+</html>

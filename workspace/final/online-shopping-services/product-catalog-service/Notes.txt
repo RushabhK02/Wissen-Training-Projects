@@ -1,0 +1,24 @@
+
+Product-Catalog Service
+-------------------------
+
+Resource(s):
+	- Product
+
+1. Resource identification in requests
+	Protocol:
+		GET
+		
+	URIs:
+	GET:	api/product-catalog
+	GET: 	api/product-catalog/{id}  --> Identification --> Path Parameter
+	GET: 	api/product-catalog?name  --> Filtering --> Query Parameter
+	
+2.Resource manipulation through representations
+
+	request	=> content-type: application/json
+			   accepts	   : application/json
+			   
+	response=> content-type: application/json
+
+3.

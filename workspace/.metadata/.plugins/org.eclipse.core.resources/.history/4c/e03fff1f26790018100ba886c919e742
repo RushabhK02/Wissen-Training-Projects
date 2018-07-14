@@ -1,0 +1,12 @@
+package com.bank.mts;
+
+public class App {
+	
+	public static void main(String[] args) {
+		// Init phase
+		
+		// use phase
+
+		// destroy phase
+	}
+}

@@ -1,0 +1,13 @@
+package com.shopping.product.repository;
+
+import java.util.List;
+
+import com.shopping.product.model.Product;;
+
+public interface ProductRepository {
+	List<Product> find();
+	
+	<T> Product findByProperty(T propValue);
+	
+	Product save(Product product);
+}

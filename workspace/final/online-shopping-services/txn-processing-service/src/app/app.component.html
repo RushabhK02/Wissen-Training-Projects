@@ -1,0 +1,29 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div class="container">
+  <nav class="navbar navbar-light bg-secondary">
+    <span class="navbar-brand h1" routerLink="">{{title}}</span>
+  </nav>
+  <hr/>
+  <hr/>
+  <div class="row">
+    <div class="col-2 col-sm-2 col-md-2">
+      <ul class="nav flex-column">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="" [routerLinkActive]="['bg-warning']" [routerLinkActiveOptions]="{exact:true}">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="transact" [routerLinkActive]="['bg-warning']" [routerLinkActiveOptions]="{exact:true}">Transact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="account" [routerLinkActive]="['bg-warning']" [routerLinkActiveOptions]="{exact:true}">View Accounts</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" routerLink="summary" [routerLinkActive]="['bg-warning']" [routerLinkActiveOptions]="{exact:true}">View Txn Summary</a>
+        </li>
+      </ul>
+    </div>
+    <div class="col-10 col-sm-10 col-md-10">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>

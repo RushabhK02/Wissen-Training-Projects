@@ -1,0 +1,55 @@
+
+
+complexities of controller ( in servlet & JSP)
+-----------------------------------
+
+ -> inspect every incoming request
+ -> validate input params
+ -> type conversion
+ -> map req params to model objects
+ -> maintain session
+ -> authenticate 
+ -> after req process, shud render response
+ -> ..............
+ 
+ 
+ 
+ ----------------------------------------------------------------
+ 
+ 
+ mvc f.w
+ --------------
+ 
+ 
+ 
+ 
+ 	1. struts 1.x  ==> ASF
+ 	2. webwork/struts 2.x  ==> open symphony / ASF
+ 	
+ 	UI component based F.Ws
+ 	
+ 	3. JSF ( Java Server Faces )  ==> custom ui-tags spec
+ 	
+ 		-   Richfaces  : JBOSS
+ 		-   Oracle ADF : Oracle
+ 		-   Primefaces  : Apache 
+ 	
+ 	4. Tapestry
+ 	
+ 	
+
+ 	5. Spring MVC 
+ 	
+ 	---------------------------------------------------------------
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

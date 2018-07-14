@@ -1,0 +1,29 @@
+<div class="list-group">
+  
+    <p-table [value]="txns">
+        <ng-template pTemplate="header">
+            <tr>
+                <th>Txn ID</th>
+                <th>Date of Txn</th>
+                <th>Txn Amt</th>
+                <th>Txn Type</th>
+                <th>Closing Balance</th>
+                <th>Account Number</th>
+                <th>Holder Name</th>        
+            </tr>
+        </ng-template>
+        <ng-template pTemplate="body" let-txn>
+            <tr>
+                <td>{{txn.id}}</td>
+                <td>{{txn.date|date}}</td>
+                <td>{{txn.amount}}</td>
+                <td>{{txn.type}}</td>
+                <td>{{txn.closingBalance}}</td>
+                <td>{{txn.account.num}}</td>
+                <td>{{txn.account.holderName|uppercase}}</td>
+                
+            </tr>
+        </ng-template>
+    </p-table>
+
+</div>

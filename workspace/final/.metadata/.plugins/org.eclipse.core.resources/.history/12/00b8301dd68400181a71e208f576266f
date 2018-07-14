@@ -1,0 +1,47 @@
+package com.shopping.product.web;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ResponseBody;
+
+import com.shopping.product.model.Product;
+import com.shopping.product.repository.ProductRepository;
+
+
+
+@Controller
+public class ProductController {
+	
+	@Autowired
+	private ProductRepository productRepository;
+
+	@RequestMapping(value = "/api/product-catalog", method = RequestMethod.GET)
+	public @ResponseBody Product getProducts() {
+		List<Product> products = productRepository.find();
+		return products.get(0);
+	}
+
+	@RequestMapping(value = "/api/product-catalog/id/{id}", 
+					method = RequestMethod.GET,
+					consumes = "application/json",
+					produces = "application/json")
+	public @ResponseBody Product getProductById(@PathVariable int id) {
+		Product product = productRepository.findByProperty(id);
+		return product;
+	}
+
+	@RequestMapping(value = "/api/product-catalog/name/{name}", 
+					method = RequestMethod.GET,
+					consumes = "application/json",
+					produces = "application/json")
+	public @ResponseBody Product getProductByName(@PathVariable String name) {
+		Product product = productRepository.findByProperty(name);
+		return product;
+	}
+
+}

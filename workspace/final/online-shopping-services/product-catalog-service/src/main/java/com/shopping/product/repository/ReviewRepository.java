@@ -1,0 +1,12 @@
+package com.shopping.product.repository;
+
+import java.util.List;
+
+import com.shopping.product.model.Review;
+
+public interface ReviewRepository {
+	List<Review> loadReviews(int productId);
+	Review addReview(Review review);
+	Review findById(int reviewId);
+	void deleteReview(int reviewId);
+}

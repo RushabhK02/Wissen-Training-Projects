@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>PM</title>
+<link href="css/bootstrap.css" rel="stylesheet" />
+</head>
+<body class="container">
+	<hr />
+	<h1>PM</h1>
+	<hr />
+
+	<div class="card">
+		<div class="card-header">Products List</div>
+		<div class="card-body">
+			<table class="table table-sm table-bordered">
+				<thead>
+					<tr>
+						<th>Id</th>
+						<th>Name</th>
+						<th>Price</th>
+						<th>Date</th>
+						<th></th>
+						<th></th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>00</td>
+						<td>abc</td>
+						<td>0.0</td>
+						<td>12/12/2018</td>
+						<td><a href>edit</a></td>
+						<td><a href>delete</a></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+
+	<div class="col-sm-8 col-md-8">
+		<div class="card">
+			<div class="card-header">Product Form</div>
+			<div class="card-body">
+				<form>
+					<div class="row">
+						<div class="col">
+							<input type="text" class="form-control" placeholder="Name" />
+						</div>
+						<div class="col">
+							<input type="number" class="form-control" placeholder="Price" />
+						</div>
+						<div class="col">
+							<input type="text" class="form-control" placeholder="make-Date" />
+						</div>
+					</div>
+					<hr />
+					<div class="row">
+						<div class="col">
+							<textarea rows="" cols="" class="form-control"
+								placeholder="Description">
+							</textarea>
+						</div>
+					</div>
+					<hr />
+					<div class="row">
+						<button class="btn btn-primary">Save</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

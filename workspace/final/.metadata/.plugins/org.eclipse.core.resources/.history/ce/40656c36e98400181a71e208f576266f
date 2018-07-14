@@ -1,0 +1,21 @@
+package com.shopping.product.repository;
+
+import java.util.List;
+
+import com.shopping.product.model.Review;
+
+public class ReviewRepositoryImpl implements ReviewRepository {
+
+	@Override
+	public List<Review> loadReviews(int productId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Review addReview(Review review) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

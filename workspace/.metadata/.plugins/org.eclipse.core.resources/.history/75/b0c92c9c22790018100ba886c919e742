@@ -1,0 +1,5 @@
+package com.bank.mts.repository;
+
+public interface AccountRepository {
+
+}

@@ -1,0 +1,27 @@
+package com.shopping.product.model;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Table;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+
+@Entity
+@Table(name = "REVIEWS", schema = "shop_db")
+public class Review {
+	
+	@Id
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	int Id;
+	int stars;
+	String author;
+	String review;
+	
+	@ManyToOne
+	@JoinColumn(name="product_id")
+	Product product;
+	
+	
+}

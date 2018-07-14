@@ -1,0 +1,20 @@
+package com.bank.mts.web;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+
+import com.bank.mts.service.TxrService;
+import com.bank.mts.service.TxrServiceImpl;
+
+public class txrController extends HttpServlet {
+	private TxrService txrService;
+	
+	@Override
+	public void init() throws ServletException {
+		ApplicationContext applicationContext = null;
+		applicationContext = (ApplicationContext) WebApplicationContextUtils
+				.getRequiredWebApplicationContext(config.getServletContext());
+		this.txrService = applicationContext.getBean("txrService", TxrService.class);
+	}
+	
+}

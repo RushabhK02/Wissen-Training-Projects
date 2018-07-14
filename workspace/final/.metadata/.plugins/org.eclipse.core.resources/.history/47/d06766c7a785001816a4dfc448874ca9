@@ -1,0 +1,31 @@
+package com.shopping.txns.web;
+
+public class TxnDetails {
+	String fromAccNum;
+	String toAccNum;
+	String amount;
+	
+	public String getFromAccNum() {
+		return fromAccNum;
+	}
+	public void setFromAccNum(String fromAccNum) {
+		this.fromAccNum = fromAccNum;
+	}
+	public String getToAccNum() {
+		return toAccNum;
+	}
+	public void setToAccNum(String toAccNum) {
+		this.toAccNum = toAccNum;
+	}
+	public String getAmount() {
+		return amount;
+	}
+	public void setAmount(String amount) {
+		this.amount = amount;
+	}
+	@Override
+	public String toString() {
+		return "TxnDetails [fromAccNum=" + fromAccNum + ", toAccNum=" + toAccNum + ", amount=" + amount + "]";
+	}
+	
+}

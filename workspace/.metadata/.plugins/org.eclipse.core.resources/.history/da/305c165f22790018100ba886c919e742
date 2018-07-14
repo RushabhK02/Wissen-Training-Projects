@@ -1,0 +1,10 @@
+package com.bank.mts.model;
+
+public class Account {
+	private String num;
+	private String holderName;
+	private double balance;
+	private AccountType accountType;
+	
+
+}

@@ -1,0 +1,42 @@
+package com.shopping.txns;
+
+import java.util.List;
+
+import org.springframework.boot.CommandLineRunner;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.Bean;
+
+import com.shopping.txns.model.Account;
+import com.shopping.txns.model.Txn;
+import com.shopping.txns.repository.AccountRepository;
+import com.shopping.txns.repository.TxnRepository;
+import com.shopping.txns.service.TxrService;
+
+@SpringBootApplication
+public class ProductTxnServiceApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(ProductTxnServiceApplication.class, args);
+	}
+	
+	@Bean
+	public CommandLineRunner test(AccountRepository accountRepository, TxnRepository txnRepository,TxrService txrService) {
+		return args->{
+			Account toAccount = accountRepository.load("1");
+			Account fromAccount = accountRepository.load("2");
+			
+			System.out.println(toAccount.getHolderName());
+			System.out.println();
+			System.out.println(fromAccount.getHolderName());
+			
+			List<Txn> txns = txnRepository.findAll();
+			for(Txn txn:txns) {
+				System.out.println(txn.getAmount()+":"+txn.getDescription());
+			}
+			
+			txrService.txr(300, fromAccount.getNum(), toAccount.getNum())
+			
+		};
+	}
+}

@@ -1,0 +1,4 @@
+npm i bootstrap --save
+npm i font-awesome --save
+npm i --save
+ng serve

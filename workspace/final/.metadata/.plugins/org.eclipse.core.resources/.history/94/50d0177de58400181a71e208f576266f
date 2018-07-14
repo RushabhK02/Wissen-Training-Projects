@@ -1,0 +1,17 @@
+package com.shopping.product.model;
+
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "REVIEWS", schema = "shop_db")
+public class Review {
+	
+	int reviewId;
+	int stars;
+	String author;
+	String review;
+	int productId;
+	
+	
+}

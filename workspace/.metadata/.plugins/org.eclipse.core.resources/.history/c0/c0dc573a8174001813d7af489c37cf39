@@ -1,0 +1,46 @@
+package com.shop;
+
+import java.sql.SQLException;
+import java.time.LocalDate;
+import java.util.List;
+
+import com.shop.model.Product;
+import com.shop.repository.JdbcProductRepository;
+import com.shop.repository.ProductRepository;
+
+public class App {
+
+	public static void main(String[] args) throws SQLException {
+
+		ProductRepository productRepository = new JdbcProductRepository();
+		// ----------------------------------------------
+		// 1. create
+		//Product product = new Product(111, "Laptop", 198000, LocalDate.now(), "images/Laptop.png", "New Alienware");
+		//productRepository.save(product);
+		// ----------------------------------------------
+		// 2. select All
+		List<Product> products = productRepository.findAll();
+		for (Product prod : products) {
+			System.out.println(prod);
+		}
+		System.out.println();
+		// ----------------------------------------------
+		//3. select one
+		Product product = productRepository.find(111);
+		System.out.println(product);
+		// ----------------------------------------------
+		//4. Update
+		productRepository.update(111, 65000);
+		// ----------------------------------------------
+		//5. Delete
+		productRepository.delete(222);
+		
+		products = productRepository.findAll();
+		for (Product prod : products) {
+			System.out.println(prod);
+		}
+		System.out.println();
+		
+	}
+
+}
